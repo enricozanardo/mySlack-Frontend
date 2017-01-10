@@ -1,10 +1,10 @@
-import React from 'reeact';
+import React from 'react';
 import ReactDom from 'react-dom';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 
-import reducers from './reducers';
 import App from './components/App.jsx'
+import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
