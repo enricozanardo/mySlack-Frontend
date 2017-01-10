@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <div>React Simple App</div>
+      <div>React Skeleton App</div>
     );
   }
 }

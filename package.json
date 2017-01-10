@@ -6,7 +6,7 @@
   "repository" : "git@github.com:onezerobinary/React-Skeleton.git",
   "scripts": {
     "build": "webpack",
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors --content-base './src/public/'",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --progress --colors",
     "test": ""
   },
   "author": "Enrico Zanardo",
