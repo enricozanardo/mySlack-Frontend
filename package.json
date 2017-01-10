@@ -4,7 +4,7 @@
   "description": "Skeleton Project for React-Redux-Webpack projects",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "Enrico Zanardo",
   "license": "MIT"
