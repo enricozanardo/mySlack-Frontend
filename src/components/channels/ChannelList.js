@@ -5,7 +5,9 @@ class ChannelList extends Component{
   render(){
 
     var channelList = this.props.channels.map( chan => {
-      return <Channel channel={chan} key={chan.id} {...this.props} />
+      return <Channel
+        channel={chan}
+        key={chan.id} {...this.props} />
     });
 
     return (

@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 
 import ChannelSection from './channels/ChannelSection';
+import UserSection from './users/UserSection';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      channels: []
+      channels: [],
+      users: [],
+      activeChannel: {}
     };
   }
+
+  setUserName(name){
+    let {users} = this.state;
+    users.push({id: users.length, name});
+    this.setState({users});
+    // TODO: Send to server
+  }
+
   addChannel(name){
     let {channels} = this.state;
     channels.push({id: channels.length, name});
@@ -29,6 +40,10 @@ class App extends Component {
               addChannel={this.addChannel.bind(this)}
               setChannel={this.setChannel.bind(this)}
             />
+          <UserSection
+            {...this.state}
+            setUserName={this.setUserName.bind(this)}
+          />
         </div>
       </div>
     );
