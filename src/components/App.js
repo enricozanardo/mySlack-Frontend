@@ -22,13 +22,14 @@ class App extends Component {
 
   render() {
     return (
-      <div className="row">
-        <h2>MySlack</h2>
-        <ChannelSection
-            {...this.state}
-            addChannel={this.addChannel.bind(this)}
-            setChannel={this.setChannel.bind(this)}
-          />
+      <div className='app'>
+        <div className='nav'>
+          <ChannelSection
+              {...this.state}
+              addChannel={this.addChannel.bind(this)}
+              setChannel={this.setChannel.bind(this)}
+            />
+        </div>
       </div>
     );
   }
