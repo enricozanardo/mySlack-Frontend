@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="row">
-        <h2> React Router App </h2>
+        <h2>MySlack</h2>
         <NavBar />
         {this.props.children}
       </div>

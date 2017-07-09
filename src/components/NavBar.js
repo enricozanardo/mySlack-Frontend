@@ -7,8 +7,7 @@ class NavBar extends Component {
       <div className="row">
           <h4>Nav Bar</h4>
           <Link to="/page1" className="btn btn-primary pull-xs-right" >Page1</Link>
-          <Link to="/page2" className="btn btn-warning pull-xs-right">Page2</Link>
-        </div>
+          <Link to="/page2" className="btn btn-warning pull-xs-right" >Page2</Link>
       </div>
     );
   };
